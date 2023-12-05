@@ -1,0 +1,641 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/obj/Debug/net7.0/scopedcss/projectbundle/BookShopMvc.bundle.scp.css",
+      "PackagePath": "staticwebassets/BookShopMvc.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/.DS_Store",
+      "PackagePath": "staticwebassets/backend/.DS_Store"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/css/SidebarNav.min.css",
+      "PackagePath": "staticwebassets/backend/css/SidebarNav.min.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/css/animate.css",
+      "PackagePath": "staticwebassets/backend/css/animate.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/css/bootstrap.css",
+      "PackagePath": "staticwebassets/backend/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/css/custom.css",
+      "PackagePath": "staticwebassets/backend/css/custom.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/css/export.css",
+      "PackagePath": "staticwebassets/backend/css/export.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/css/font-awesome.css",
+      "PackagePath": "staticwebassets/backend/css/font-awesome.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/css/graph.css",
+      "PackagePath": "staticwebassets/backend/css/graph.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/css/jqcandlestick.css",
+      "PackagePath": "staticwebassets/backend/css/jqcandlestick.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/css/monthly.css",
+      "PackagePath": "staticwebassets/backend/css/monthly.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/css/owl.carousel.css",
+      "PackagePath": "staticwebassets/backend/css/owl.carousel.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/css/style.css",
+      "PackagePath": "staticwebassets/backend/css/style.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/fonts/FontAwesome.otf",
+      "PackagePath": "staticwebassets/backend/fonts/FontAwesome.otf"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/fonts/fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets/backend/fonts/fontawesome-webfont.eot"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/fonts/fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets/backend/fonts/fontawesome-webfont.svg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/fonts/fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets/backend/fonts/fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/fonts/fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets/backend/fonts/fontawesome-webfont.woff"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/fonts/fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets/backend/fonts/fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/fonts/glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets/backend/fonts/glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/fonts/glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets/backend/fonts/glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/fonts/glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets/backend/fonts/glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/fonts/glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets/backend/fonts/glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/.DS_Store",
+      "PackagePath": "staticwebassets/backend/images/.DS_Store"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/1.jpg",
+      "PackagePath": "staticwebassets/backend/images/1.jpg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/2.jpg",
+      "PackagePath": "staticwebassets/backend/images/2.jpg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/3.jpg",
+      "PackagePath": "staticwebassets/backend/images/3.jpg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/4.jpg",
+      "PackagePath": "staticwebassets/backend/images/4.jpg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/Product/bef4a65d-6978-4670-9f53-4a115486fbca_51waho5hrih0pxmv4rsdqj91i9y9erbg.jpeg",
+      "PackagePath": "staticwebassets/backend/images/Product/bef4a65d-6978-4670-9f53-4a115486fbca_51waho5hrih0pxmv4rsdqj91i9y9erbg.jpeg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/a.png",
+      "PackagePath": "staticwebassets/backend/images/a.png"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/i1.png",
+      "PackagePath": "staticwebassets/backend/images/i1.png"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/i2.png",
+      "PackagePath": "staticwebassets/backend/images/i2.png"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/i3.png",
+      "PackagePath": "staticwebassets/backend/images/i3.png"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/i4.png",
+      "PackagePath": "staticwebassets/backend/images/i4.png"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/img-sprite.png",
+      "PackagePath": "staticwebassets/backend/images/img-sprite.png"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/img1.png",
+      "PackagePath": "staticwebassets/backend/images/img1.png"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/lock.png",
+      "PackagePath": "staticwebassets/backend/images/lock.png"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/mail.png",
+      "PackagePath": "staticwebassets/backend/images/mail.png"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/search-icon.png",
+      "PackagePath": "staticwebassets/backend/images/search-icon.png"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/slider1.jpg",
+      "PackagePath": "staticwebassets/backend/images/slider1.jpg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/slider2.jpg",
+      "PackagePath": "staticwebassets/backend/images/slider2.jpg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/slider3.jpg",
+      "PackagePath": "staticwebassets/backend/images/slider3.jpg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/slider4.jpg",
+      "PackagePath": "staticwebassets/backend/images/slider4.jpg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/slider5.jpg",
+      "PackagePath": "staticwebassets/backend/images/slider5.jpg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/slider6.jpg",
+      "PackagePath": "staticwebassets/backend/images/slider6.jpg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/slider7.jpg",
+      "PackagePath": "staticwebassets/backend/images/slider7.jpg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/tick.png",
+      "PackagePath": "staticwebassets/backend/images/tick.png"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/user.png",
+      "PackagePath": "staticwebassets/backend/images/user.png"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/images/weather.jpg",
+      "PackagePath": "staticwebassets/backend/images/weather.jpg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/Chart.bundle.js",
+      "PackagePath": "staticwebassets/backend/js/Chart.bundle.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/Chart.js",
+      "PackagePath": "staticwebassets/backend/js/Chart.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/Chart.min.js",
+      "PackagePath": "staticwebassets/backend/js/Chart.min.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/SidebarNav.min.js",
+      "PackagePath": "staticwebassets/backend/js/SidebarNav.min.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/SimpleChart.js",
+      "PackagePath": "staticwebassets/backend/js/SimpleChart.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/amcharts.js",
+      "PackagePath": "staticwebassets/backend/js/amcharts.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/bootstrap.js",
+      "PackagePath": "staticwebassets/backend/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/chartinator.js",
+      "PackagePath": "staticwebassets/backend/js/chartinator.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/classie.js",
+      "PackagePath": "staticwebassets/backend/js/classie.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/custom.js",
+      "PackagePath": "staticwebassets/backend/js/custom.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/export.min.js",
+      "PackagePath": "staticwebassets/backend/js/export.min.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/images/dragIconRoundBig.svg",
+      "PackagePath": "staticwebassets/backend/js/images/dragIconRoundBig.svg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/images/lens.svg",
+      "PackagePath": "staticwebassets/backend/js/images/lens.svg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/index.js",
+      "PackagePath": "staticwebassets/backend/js/index.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/index1.js",
+      "PackagePath": "staticwebassets/backend/js/index1.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/index2.js",
+      "PackagePath": "staticwebassets/backend/js/index2.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/jquery-1.11.1.min.js",
+      "PackagePath": "staticwebassets/backend/js/jquery-1.11.1.min.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/jquery.flot.js",
+      "PackagePath": "staticwebassets/backend/js/jquery.flot.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/jquery.jqcandlestick.min.js",
+      "PackagePath": "staticwebassets/backend/js/jquery.jqcandlestick.min.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/jquery.nicescroll.js",
+      "PackagePath": "staticwebassets/backend/js/jquery.nicescroll.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/light.js",
+      "PackagePath": "staticwebassets/backend/js/light.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/metisMenu.min.js",
+      "PackagePath": "staticwebassets/backend/js/metisMenu.min.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/modernizr.custom.js",
+      "PackagePath": "staticwebassets/backend/js/modernizr.custom.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/monthly.js",
+      "PackagePath": "staticwebassets/backend/js/monthly.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/morejs.js",
+      "PackagePath": "staticwebassets/backend/js/morejs.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/owl.carousel.js",
+      "PackagePath": "staticwebassets/backend/js/owl.carousel.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/pie-chart.js",
+      "PackagePath": "staticwebassets/backend/js/pie-chart.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/scripts.js",
+      "PackagePath": "staticwebassets/backend/js/scripts.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/serial.js",
+      "PackagePath": "staticwebassets/backend/js/serial.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/utils.js",
+      "PackagePath": "staticwebassets/backend/js/utils.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/backend/js/validator.min.js",
+      "PackagePath": "staticwebassets/backend/js/validator.min.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/css/.DS_Store",
+      "PackagePath": "staticwebassets/css/.DS_Store"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/css/FormUser.css",
+      "PackagePath": "staticwebassets/css/FormUser.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/css/account.css",
+      "PackagePath": "staticwebassets/css/account.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/css/reset.css",
+      "PackagePath": "staticwebassets/css/reset.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/images/.DS_Store",
+      "PackagePath": "staticwebassets/images/.DS_Store"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/images/background-account.jpeg",
+      "PackagePath": "staticwebassets/images/background-account.jpeg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/images/logo/logobook.png",
+      "PackagePath": "staticwebassets/images/logo/logobook.png"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/images/products/sach1.jpeg",
+      "PackagePath": "staticwebassets/images/products/sach1.jpeg"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/images/users/avatar-2.png",
+      "PackagePath": "staticwebassets/images/users/avatar-2.png"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/js/.DS_Store",
+      "PackagePath": "staticwebassets/js/.DS_Store"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/js/cartlogin.js",
+      "PackagePath": "staticwebassets/js/cartlogin.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/js/js.js",
+      "PackagePath": "staticwebassets/js/js.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/js/register.js",
+      "PackagePath": "staticwebassets/js/register.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/js/search.js",
+      "PackagePath": "staticwebassets/js/search.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/json/products.json",
+      "PackagePath": "staticwebassets/json/products.json"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/hieuhee/Documents/MyProject/bookshop/BookShopMvc/BookShopMvc/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.BookShopMvc.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.BookShopMvc.props",
+      "PackagePath": "build\\BookShopMvc.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.BookShopMvc.props",
+      "PackagePath": "buildMultiTargeting\\BookShopMvc.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.BookShopMvc.props",
+      "PackagePath": "buildTransitive\\BookShopMvc.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

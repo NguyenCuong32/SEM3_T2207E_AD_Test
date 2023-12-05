@@ -1,0 +1,56 @@
+﻿<Properties StartupConfiguration="{704C8398-E7D3-4D2B-955C-09FB27ADE060}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BookShopMvc/Areas/Admin/Controllers/ProductController.cs">
+    <Files>
+      <File FileName="BookShopMvc/Views/Product/Index.cshtml" Line="3" Column="1" />
+      <File FileName="BookShopMvc/Views/Filter/FilterProducts.cshtml" Line="56" Column="42" />
+      <File FileName="BookShopMvc/Views/Shared/Components/HomeProduct/Default.cshtml" Line="43" Column="217" />
+      <File FileName="BookShopMvc/Views/Search/Index.cshtml" Line="40" Column="221" />
+      <File FileName="BookShopMvc/Areas/Admin/Controllers/ProductController.cs" Line="65" Column="41" />
+      <File FileName="BookShopMvc/Areas/Admin/Controllers/AddAccountController.cs" Line="11" Column="16" />
+      <File FileName="BookShopMvc/Controllers/ProductController.cs" Line="1" Column="1" />
+      <File FileName="BookShopMvc/Repository/Components/HomeProductViewComponent.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BookShopMvc" expanded="True">
+            <Node name="BookShopMvc" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Controllers" expanded="True">
+                    <Node name="ProductController.cs" selected="True" />
+                  </Node>
+                  <Node name="Views" expanded="True">
+                    <Node name="Account" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Repository" expanded="True">
+                <Node name="Components" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Search" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="backend" expanded="True">
+                  <Node name="images" expanded="True">
+                    <Node name="Product" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BookShopMvc PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

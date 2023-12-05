@@ -1,0 +1,35 @@
+﻿@model Publisher
+@{
+    ViewData["Title"] = "Add Publisher";
+}
+@using BookShopMvc.Models;
+
+<div id="page-wrapper">
+    <div class="main-page">
+        <h4>Add Publisher</h4>
+        <div class="col-12">
+            <div class="col-md-9">
+                <form asp-action="Add" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input asp-for="Name" class="form-control" id="title" onkeyup="ChangeToSlug()" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Slug</label>
+                        <input asp-for="Slug" class="form-control" id="convert_slug" />
+                        <span asp-validation-for="Slug" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-primary" onclick="addCategory()">Add</button>
+                    </div>
+                </form>
+                <a asp-action="Index">Back to List Publisher</a>
+            </div>
+        </div>
+    </div>
+</div>

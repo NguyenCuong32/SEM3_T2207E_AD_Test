@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Publisher>
+@{
+    ViewData["title"] = "List Category";
+}
+<div id="page-wrapper">
+    <div class="main-page">
+        <h4>List Genre</h4>
+        <table class="table" id="myTable">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name Category</th>
+                    <th scope="col">Slug</th>
+                    <th scope="col">Manager</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    var i = 0;
+                }
+                @foreach (var item in Model)
+                {
+                    i++;
+                    <tr>
+                        <th scope="row">@i</th>
+                        <td>@item.Name</td>
+                        <td>@item.Slug</td>
+                        <td><button type="button" class="btn btn-primary"><a asp-action="Fix" asp-controller="Publisher" asp-route-Id="@item.Id" class="text-white">Fix</a></button> | <button type="button" class="btn btn-danger"><a class="text-white" asp-action="Delete" asp-controller="Publisher" asp-route-Id="@item.Id">Delete</a></button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

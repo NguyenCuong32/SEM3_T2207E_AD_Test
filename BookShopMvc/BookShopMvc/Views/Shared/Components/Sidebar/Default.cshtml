@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Category>
+
+@foreach(var items in Model)
+{
+    <div class="menu-category">
+    <h3 class="menu-heading"><td>@Html.Raw(items.Icon)</td> <a asp-action="Index" asp-controller="Category" asp-route-Slug="@items.Slug" class="text-decoration-none menu-title-link">@items.Name</a> <i class="fa-solid fa-caret-down"></i></h3>
+    <div class="menu-details">
+        <ul>
+            @foreach(var item in items.Subcategories)
+            {
+            <li><a asp-action="Index" asp-controller="SubCategory" asp-route-Slug="@item.Slug">@item.Name</a></li>
+            }
+        </ul>
+    </div>
+</div>
+}

@@ -1,0 +1,174 @@
+﻿.logo {
+    width: 100px;
+    height: 100%;
+}
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+.menu-user .text-menu {
+    padding: 0 25px;
+}
+
+    .menu-user .text-menu a {
+        text-decoration: none;
+        color: black;
+    }
+
+.cart {
+}
+
+    .cart span a {
+        color: black;
+        text-decoration: none;
+    }
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+    .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.name-user {
+    margin-left: 5px;
+}
+
+/* menu left */
+.menu-heading {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.menu-title-link {
+    color: #818181;
+}
+
+.menu-category {
+    cursor: pointer;
+}
+
+.menu-category .menu-details {
+    display: block;
+}
+
+.menu-category .menu-details ul li {
+    list-style-type: none;
+}
+
+.menu-category .menu-details ul li a {
+    text-decoration: none;
+    color: #818181;
+}
+
+/* style item image */
+.images-item-book {
+    width: 35%;
+    height: 100%;
+}
+
+    .images-item-book img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.content-item-book {
+    width: 60%;
+    height: 95%;
+    padding-right: 16px;
+}
+
+    .content-item-book p {
+        margin: 0;
+    }
+
+.title-item-book {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.des-item-book span {
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 5px;
+}
+
+.des-item-book .price-book {
+    color: #818181;
+    font-weight: 400;
+}
+
+.des-item-book a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #818181;
+}
+
+.rate-item-book {
+    list-style-type: none;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+    .rate-item-book li span {
+        font-size: 20px;
+        color: #FD9F22;
+    }
+
+.item-book-user {
+    width: 50%;
+}
+
+.item-book-user .add-cart {
+    padding: 4px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 16px;
+}
+
+.heart {
+    font-size: 20px;
+    color: black;
+}
+
+
+/* cart style */
+
+.tag-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.fill-price {
+    height: 140px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.button-submit {
+    padding: 2px 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.form-filter {
+    border-bottom: 1px solid #dee2e6;
+}
+

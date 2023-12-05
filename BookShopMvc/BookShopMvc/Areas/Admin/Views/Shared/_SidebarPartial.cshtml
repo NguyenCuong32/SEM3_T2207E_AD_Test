@@ -1,0 +1,160 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject UserManager<AppUser> UserManager
+@{
+    var user = await UserManager.GetUserAsync(User);
+    var isVipAdmin = false;
+    if (user != null)
+    {
+        isVipAdmin = await UserManager.IsInRoleAsync(user, "VipAdmin");
+    }
+}
+
+<aside class="sidebar-left">
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target=".collapse"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <h1>
+                <a class="navbar-brand" href="index.html">
+                    <span class="fa fa-area-chart"></span> Glance<span class="dashboard_text">Design dashboard</span>
+                </a>
+            </h1>
+        </div>
+        <div class="collapse navbar-collapse"
+             id="bs-example-navbar-collapse-1">
+            <ul class="sidebar-menu">
+                <li class="header">Admin Web book</li>
+                <li class="treeview">
+                    <a asp-action="Index" asp-controller="Home">
+                        <i class="fa fa-dashboard"></i> <span>Home</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-laptop"></i>
+                        <span>Category</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a asp-action="Index" asp-controller="Category"><i class="fa fa-angle-right"></i>List Category</a>
+                        </li>
+                        <li>
+                            <a asp-action="Add" asp-controller="Category"><i class="fa fa-angle-right"></i>Add Category</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-laptop"></i>
+                        <span>Sub Category</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a asp-action="Index" asp-controller="Subcategory"><i class="fa fa-angle-right"></i>List SubCategory</a>
+                        </li>
+                        <li>
+                            <a asp-action="Add" asp-controller="Subcategory"><i class="fa fa-angle-right"></i>Add SubCategory</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-laptop"></i>
+                        <span>Author</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a asp-action="Index" asp-controller="Author"><i class="fa fa-angle-right"></i>List Author</a>
+                        </li>
+                        <li>
+                            <a asp-action="Add" asp-controller="Author"><i class="fa fa-angle-right"></i>Add Author</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-laptop"></i>
+                        <span>Publishing Company</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a asp-action="Index" asp-controller="Publisher"><i class="fa fa-angle-right"></i>List Publisher</a>
+                        </li>
+                        <li>
+                            <a asp-action="Add" asp-controller="Publisher"><i class="fa fa-angle-right"></i>Add Publisher</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-laptop"></i>
+                        <span>Product</span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a asp-action="Index" asp-controller="Product"><i class="fa fa-angle-right"></i>List Product</a>
+                        </li>
+                        <li>
+                            <a asp-action="Add" asp-controller="Product"><i class="fa fa-angle-right"></i>Add Product</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--- add user admin -->
+                @if (User.Identity.IsAuthenticated && isVipAdmin)
+                {
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-laptop"></i>
+                            <span>User Admin</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a asp-action="Index" asp-controller="AddAccount"><i class="fa fa-angle-right"></i>List Account</a>
+                            </li>
+                            <li>
+                                <a asp-action="Add" asp-controller="AddAccount"><i class="fa fa-angle-right"></i>Add Product</a>
+                            </li>
+                        </ul>
+                    </li>
+                }
+
+                <!--- add user admin -->
+                @if (User.Identity.IsAuthenticated && isVipAdmin)
+                {
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-laptop"></i>
+                            <span>Roles</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a asp-action="Index" asp-controller="Role"><i class="fa fa-angle-right"></i>List Role</a>
+                            </li>
+                            <li>
+                                <a asp-action="Add" asp-controller="Role"><i class="fa fa-angle-right"></i>Add Role</a>
+                            </li>
+                        </ul>
+                    </li>
+                }
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+</aside>

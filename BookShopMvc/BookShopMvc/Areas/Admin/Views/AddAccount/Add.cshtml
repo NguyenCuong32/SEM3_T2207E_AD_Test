@@ -1,0 +1,52 @@
+﻿@model Users
+    ViewData["Title"] = "Add users";
+}
+
+@using BookShopMvc.Models;
+
+<div id="page-wrapper">
+    <div class="main-page">
+        <h4>Add Category</h4>
+        <div class="col-12">
+            <div class="col-md-9">
+                <form asp-action="Add" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input asp-for="Username" class="form-control" id="title" onkeyup="ChangeToSlug()" />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input asp-for="Email" class="form-control" id="title" onkeyup="ChangeToSlug()" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Choose role</label>
+                        <select asp-for="RoleId" class="form-control">
+                            <option value="">--Choose a Role--</option>
+                            @foreach (var role in Model.Roles)
+                            {
+                                <option value="@role.Id">@role.Name</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-primary" onclick="addCategory()">Add</button>
+                    </div>
+                </form>
+                <a asp-action="Index">Back to List Category</a>
+            </div>
+        </div>
+    </div>
+</div>

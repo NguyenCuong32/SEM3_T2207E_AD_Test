@@ -1,0 +1,17 @@
+﻿<div class="col-3 bg-light shadow-sm px-1 py-3 bg-body rounded" style="height: fit-content;">
+    <!-- menu -->
+    <div class="menu w-75 d-flex flex-column m-auto py-4">
+
+        <div class="input-group rounded pb-4">
+            <form asp-action="Index" asp-controller="Search" method="get" class="d-flex justify-content-between">
+                <input style="width:84%" type="text" name="search" id="timkiem" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <button style="padding: 5px 10px; background-color: #81818181; color:white; border-radius:5px" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <ul class="list-group" id="result">
+            </ul>
+        </div>
+        <vc:sidebar></vc:sidebar>
+    </div>
+    <!-- end menu -->
+</div>
+

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Category>
+
+<div class="container">
+    <div class="row">
+       @Html.Partial("_SidebarDetailPartial")
+        <div class="col-9">
+            <!-- list book -->
+            @foreach (var cate in Model)
+            {
+                @foreach (var subCate in cate.Subcategories)
+                {
+                    <div class="list-book">
+                        <div class="list-book-top d-flex justify-content-between align-items-center">
+                            <h3>@subCate.Name</h3>
+                            <p class="text-center"><a class="text-decoration-none text-dark" href="">View All</a></p>
+                        </div>
+                        <div class="row justify-content-evenly">
+                            @foreach (var product in subCate.Products)
+                            {
+                                <div class="col-6">
+
+                                    <div class="item bg-light d-flex justify-content-between shadow-sm p-3 mb-5 bg-body rounded" style="height: 250px;">
+                                        <!-- images cart item -->
+                                        <div class="images-item-book">
+                                            <img src="~/backend/images/Product/@product.Thumb" alt="">
+                                        </div>
+                                        <!-- end -->
+                                        <!-- content item book -->
+                                        <div class="content-item-book d-flex flex-column justify-content-around ">
+                                            <p class="title-item-book">@product.Name</p>
+                                            <p class="des-item-book"><span>Lĩnh vực: </span><a href="">@subCate.Name</a></p>
+                                            <p class="des-item-book"><span>Tác giả: </span> <a href="">@product.Author.Name</a></p>
+                                            <ul class="rate-item-book d-flex justify-content-between">
+                                                <li><span>&#9733;</span></li>
+                                                <li><span>&#9733;</span></li>
+                                                <li><span>&#9733;</span></li>
+                                                <li><span>&#9733;</span></li>
+                                                <li><span>&#9733;</span></li>
+                                            </ul>
+                                            <p class="des-item-book"><span>Price:</span><span class="price-book">@product.Price đ</span></p>
+                                            <div class="item-book-user d-flex justify-content-between align-items-center">
+                                                <span class="add-cart">Add to cart</span>
+                                                <span class="heart"><i class="fa-solid fa-heart"></i></span>
+                                            </div>
+                                        </div>
+                                        <!-- end -->
+                                    </div>
+
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>

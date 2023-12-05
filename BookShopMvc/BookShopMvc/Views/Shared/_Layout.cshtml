@@ -1,0 +1,99 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject UserManager<AppUser> UserManager
+@{
+    var user = await UserManager.GetUserAsync(User);
+    var isUser = false;
+    if (user != null)
+    {
+        isUser = await UserManager.IsInRoleAsync(user, "User");
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/FormUser.css">
+    <link rel="stylesheet" href="~/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container mt-3 mb-4">
+            <div class="row d-flex flex-row align-items-center">
+                <!-- logo -->
+                <div class="col-2">
+                    <a asp-action="Index" asp-controller="Home">
+                        <div class="logo">
+                            <img src="images/logo/logobook.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <!-- end logo -->
+                <!-- menu user -->
+                <div class="col-8">
+                    <div class="menu-user">
+                        <span class="text-menu text-selected"><a asp-action="Index" asp-controller="Home">Book Store</a></span>
+                        <span class="text-menu"><a href="">Wishlist</a></span>
+                        <span class="text-menu"><a href="">My Collection</a></span>
+                    </div>
+                </div>
+                <!-- end menu user -->
+                <!-- user -->
+                <div class="col-2">
+                    <div class="user-detail d-flex flex-row justify-content-between align-items-center">
+                        <div class="cart">
+                            <span><a href=""><i class="fa-solid fa-cart-shopping"></i></a></span>
+                        </div>
+                        @if (User.Identity.IsAuthenticated && isUser)
+                        {
+                            <div class="user position-relative w-50">
+                                <div class="avatar">
+                                    <img src="images/users/avatar-2.png" alt="">
+                                </div>
+                                <div class="name-user">
+                                    <a style="text-decoration:none; color:black" asp-action="Index" asp-controller="Account"><span>@User.Identity.Name</span></a>
+                                </div>
+                                <div class="form-user position-absolute top-100 start-0 " style="width: 100%;">
+                                    <div class="bg-light text-center py-2 shadow-sm p-3 mb-5 bg-white rounded">
+                                        <p class="m-0 p-2"><a asp-action="Index" asp-controller="Infor">Thông tin</a></p>
+                                        <p class="m-0 p-2"><a asp-action="Logout" asp-controller="Account">Đăng xuất</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="user position-relative">
+                                <div class="avatar">
+                                    <img src="images/users/avatar-2.png" alt="">
+                                </div>
+                                <div class="name-user">
+                                    <a style="text-decoration:none; color:black" asp-action="Login" asp-controller="Account"><span>login</span></a>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <!-- end user -->
+            </div>
+        </div>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+    </footer>
+    <script src="~/js/search.js"></script>
+    <script src="~/js/cartlogin.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</body>
+</html>

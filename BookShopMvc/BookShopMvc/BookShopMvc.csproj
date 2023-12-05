@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.14">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.14">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.14" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Shared\Components\HomeProduct\" />
+    <None Remove="Views\Category\" />
+    <None Remove="Views\SubCategory\" />
+    <None Remove="Views\Product\" />
+    <None Remove="Views\Search\" />
+    <None Remove="Views\Shared\Components\SidebarDetail\" />
+    <None Remove="Views\Filter\" />
+    <None Remove="Views\Account\" />
+    <None Remove="Migrations\" />
+    <None Remove="Models\ViewModels\" />
+    <None Remove="Areas\Admin\Views\Account\" />
+    <None Remove="Areas\Admin\Views\AddAccount\" />
+    <None Remove="Areas\Admin\Views\Role\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Shared\Components\HomeProduct\" />
+    <Folder Include="Views\Category\" />
+    <Folder Include="Views\SubCategory\" />
+    <Folder Include="Views\Product\" />
+    <Folder Include="wwwroot\json\" />
+    <Folder Include="Views\Search\" />
+    <Folder Include="Views\Shared\Components\SidebarDetail\" />
+    <Folder Include="Views\Filter\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="wwwroot\backend\images\Product\" />
+    <Folder Include="Models\ViewModels\" />
+    <Folder Include="Areas\Admin\Views\Account\" />
+    <Folder Include="Areas\Admin\Views\AddAccount\" />
+    <Folder Include="Areas\Admin\Views\Role\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\json\" />
+    <Content Remove="wwwroot\backend\images\Product\" />
+  </ItemGroup>
+</Project>

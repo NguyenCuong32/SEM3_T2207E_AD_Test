@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["title"] = "List Genre";
+}
+<div id="page-wrapper">
+    <div class="main-page">
+        <h4>List Genre</h4>
+        <table class="table" id="myTable">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">SubCategory</th>
+                    <th scope="col">Plisher</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Manager</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    var i = 0;
+                }
+                @foreach (var item in Model)
+                {
+                    i++;
+                    <tr>
+                        <th scope="row">@i</th>
+                        <td style="width:20%">@item.Name</td>
+                        <td>@item.Price</td>
+                        <td style="width:150px"><img style="width:100%" src="~/backend/images/Product/@item.Thumb" /></td>
+                        <td>@item.Qty</td>
+                        <td>@item.Author.Name</td>
+                        <td>@item.Subcategory.Name</td>
+                        <td>@item.Publisher.Name</td>
+                        @if (item.Status == 0)
+                        {
+                            <td>Hide</td>
+                        }
+                        else
+                        {
+                            <td>Show</td>
+                        }
+                        <td><button type="button" class="btn btn-primary"><a asp-action="Fix" asp-controller="Product" asp-route-Id="@item.Id" class="text-white">Fix</a></button> | <button type="button" class="btn btn-danger"><a class="text-white" asp-action="Delete" asp-controller="Product" asp-route-Id="@item.Id">Delete</a></button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

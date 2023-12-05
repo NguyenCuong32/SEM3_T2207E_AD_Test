@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Publisher>
+<form asp-action="FilterProducts" asp-controller="Filter" method="get">
+    <div class="fill-price d-flex flex-column justify-content-evenly my-2 pb-2">
+        <span>Giá</span>
+        <span>Chọn khoảng giá</span>
+        <div class="input-price w-100 mt-2">
+            <div class="form-input-price d-flex">
+                <input type="text" name="pricemin" value="@ViewBag.PriceMin" class="w-100 me-2 border-1">
+                -
+                <input type="text" name="pricemax" value="@ViewBag.PriceMax" class="w-100 ms-2 border-1">
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <!-- Tác giả -->
+    <div class="form-filter my-2">
+        <span class="">Tác giả</span>
+        <div class="input-group rounded my-2">
+            <input type="search" name="author" value="@ViewBag.Author" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+    </div>
+    <!--  -->
+    <!-- Nhà xuất bản -->
+    <div class="form-filter my-2">
+        <span class="">Nhà xuất bản</span>
+        <div class="input-group rounded my-2">
+            <select name="publisher" id="" class="rounded">
+                <option>Tìm theo gian hàng</option>
+                @foreach (var publisher in Model)
+                {
+                    <option value="@publisher.Id">@publisher.Name</option>
+                }
+            </select>
+        </div>
+    </div>
+    <button type="submit" class="button-submit">Tìm kiếm</button>
+</form>
