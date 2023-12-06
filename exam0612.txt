@@ -1,0 +1,67 @@
+Question 1 
+1.1.Product Backlog
+-Backlog (Công việc tồn đọng) là một danh sách nhiệm vụ cần được hoàn thành để hỗ trợ một kế hoạch chiến lược lớn hơn. Trong phát triển sản phẩm, backlog đề cập đến tập hợp các công việc ưu tiên mà nhóm đã thống nhất thực hiện trong giai đoạn kế tiếp.
+-Backlog thường áp dụng với các kỹ thuật Agile như Scrum hoặc Kanban. Nó đóng vai trò quan trọng trong việc giúp người quản lý xác định và thu thập mọi công việc cần thực hiện.
+Backlog nên được sử dụng trong giao tiếp giữa nhóm dự án và các bên liên quan. Qua việc theo dõi các mục công việc tồn đọng, tiến độ của dự án trở nên rõ ràng và dễ theo dõi. Không chỉ vậy, sử dụng công cụ này giúp nhận biết các nguy cơ có thể xảy ra trong quá trình thực hiện dự án.
+1.2.Sprint Planing Meeting
+-Sprint Planning là một sự kiện trong Scrum, cuộc họp này bao gồm Scrum Team. -Trong sprint planning meeting, product owner sẽ mô tả cho cả team các tính năng đã được sắp thứ tự ưu tiên cao nhất. Mọi người trong team sẽ đặt câu hỏi để hiểu rõ vấn đề, khi đó họ sẽ chuyển các user story của product backlog thành các task chi tiết hơn trong sprint backlog.
+1.3.Sprint backlog
+-Sprint Backlog là một phần của Product Backlog, đại diện cho tập hợp các công việc được chọn để thực hiện trong một “Sprint” – một đơn vị thời gian được xác định trong phương pháp Scrum. 
+- Sprint Backlog được sử dụng làm cơ sở để theo dõi tiến độ và thực hiện công việc, đồng thời được sắp xếp theo thứ tự ưu tiên dựa vào 2 yếu tố quan trọng là giá trị kinh doanh và sự rủi ro. Các công việc trong Sprint Backlog thường được phân chia thành các “User Story” nhỏ hơn và được ước lượng thời gian hoàn thành.
+1.4.Product Owner
+-Product Owner là người chịu trách nhiệm giải quyết các vấn đề về sản phẩm xảy ra khi sử dụng. Trong trường hợp kết quả không như mong muốn, Product Owner sẽ tiến hành quá trình cải tiến, nâng cấp để giúp sản phẩm đạt được các KPI kinh doanh đã định sẵn của công ty.
+-Đôi khi, Product Owner cũng được coi là Product Manager của các chi tiết nhỏ trong các sản phẩm lớn. Product Manager có vị trí cao hơn và phạm vi công việc rộng hơn. Họ là người giải quyết những vấn đề chung, tổng thể liên quan đến chiến lược dài hạn như lộ trình, tầm nhìn, định vị sản phẩm trên thị trường, các chiến dịch marketing…
+1.5.Scrum Master
+-Scrum Master là một vai trò trong mô hình Scrum có: Client, Product Owner, và các Scrum Team Member (Developer). Scrum Master là người đóng vai trò quan trọng trong việc giúp các thành viên trong nhóm hiểu lý thuyết, các kỹ thuật thực hành, quy tắc, và giá trị của Scrum.
+Đồng thời, Scrum Master cũng là người giúp nâng cao hiệu suất làm việc của cả nhóm qua từng Sprint nhằm đảm bảo hoàn thành dự án tốt nhất.
+1.6.Daily meeting
+-- Daily meeting là một trong các cuộc họp quan trọng của Scrum. Đây là cuộc họp nhóm hằng ngày nhằm giúp các thành viên trong nhóm cập nhật hiện trạng công việc, và tất cả các thành viên trong nhóm Scrum bắt buộc phải tham gia.
+- Mỗi developer sẽ báo cáo theo 3 mục:
+Đã làm công việc gì hôm trước
+Kế hoạch làm việc hôm nay
+Khó khăn gặp phải
+
+1.7.Sprint Review
+- Cuộc họp diễn ra cuối mỗi Sprint nhằm thanh tra và thích nghi sản phẩm đang được phát triển.
+- Cuộc họp  có sự tham gia của đội phát triển (Development Team), Scrum master, Product Owner và các stakeholders. Ở đó, đội phát triển sẽ cho người dùng trải nghiệm sản phẩm, đón nhận feedback về sản phẩm vừa chuyển giao. Sau đó, tất cả người tham gia sẽ cùng quyết định xem việc gì đã được hoàn thành, việc gì là chưa xong, hướng đi tiếp theo của sản phẩm là như thế nào. 
+1.8.Sprint Retrospective
+-Sprint Retrospective(Sprint Retro) là cơ hội để cả team nhìn lại và xác định kế hoạch cho sự thay đổi và phát triển tốt hơn trong Sprint tiếp theo 
+Thực hiện các cải tiến này chính là thể hiện được mặt thanh tra và thích nghi của Scrum Team. 
+Trong Sprint Retro, nội dung mà team sẽ bàn bạc liên quan đến 3 câu hỏi sau:
+- Điều gì thuận lợi trong Sprint?
+- Điều gì chưa tốt, cần cải tiến?
+- Cần làm gì để Sprint tiếp theo tốt hơn?
+
+
+Question 2 .
+* Product backlogs:
+- Tạo trang đăng ký tài khoản
+-Tạo trang đăng nhập
+-Xử lý đăng ký tài khoản
+- Xử lý đăng nhập
+-Xem trái cây
+-Review trái cây
+-Chia sẻ cảm xúc về trái cây
+-Đặt hàng trái cây
+-Thanh toán trực tuyến
+* Create estimate to complete for 3 backlogs for 1st Sprint.
+-Xây dựng hệ thống đăng nhập và đăng ký:
++Ước tính thời gian hoàn thành: 1 tuần
++Mục tiêu: hoàn thành chức năng đăng ký và đăng nhập
+-Hiển thị sản phẩm và đánh giá sản phẩm:
++Ước tính thời gian hoàn thành: 1,5 tuần
++Mục tiêu: hiển thị danh sách sản phẩm và chức năng đánh giá sản phẩm
+-Chức năng đặt hàng và thanh toán
++Ước tính thời gian thực hiện: 2 tuần
++ Mục tiêu: hoàn thành chức năng giỏ hàng, checkout, thanh toán
+
+
+
+
+
+
+
+
+
+
+
