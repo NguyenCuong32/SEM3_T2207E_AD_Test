@@ -1,0 +1,80 @@
+1.  Agile Scrum Process:
+1.1 Product Backlog:
+
+What: A prioritized list of features, enhancements, and bug fixes that need to be addressed in the product.
+How to use: Continuously refined and updated by the Product Owner, serving as a dynamic document to guide the team.
+
+1.2 Sprint Planning Meeting:
+
+What: A collaborative session where the team and Product Owner discuss and plan the work for the upcoming sprint.
+How to use: Establishes the Sprint Goal and selects items from the Product Backlog for the Sprint Backlog.
+
+1.3 Sprint Backlog:
+
+What: A subset of the Product Backlog items selected for the current sprint, with tasks and estimates.
+How to use: Guides the team's work during the sprint, ensuring focus on high-priority items.
+
+1.4 Product Owner:
+
+What: Represents stakeholders and defines the features of the product. Responsible for maintaining the Product Backlog.
+How to use: Works closely with the team during planning, provides clarifications, and accepts/rejects work results.
+
+1.5 Scrum Master:
+
+What: Facilitates and ensures adherence to Scrum principles and practices. Removes impediments to the team's progress.
+How to use: Supports the team in self-organization, helps to improve processes, and ensures a positive team dynamic.
+
+1.6 Daily Meeting:
+
+What: A brief, daily stand-up meeting where team members share progress, plans, and any impediments.
+How to use: Promotes communication, collaboration, and keeps the team focused on achieving the Sprint Goal.
+
+1.7 Sprint Review:
+
+What: A meeting at the end of the sprint to inspect the increment and adapt the Product Backlog.
+How to use: Allows stakeholders to provide feedback, and the team and Product Owner to adjust the backlog based on lessons learned.
+
+1.8 Sprint:
+
+What: A time-boxed iteration (usually 2-4 weeks) where the team works to deliver a potentially shippable product increment.
+How to use: The core operational unit of Scrum, providing a predictable and consistent cadence for development and feedback.
+This Agile Scrum process provides a framework for iterative and incremental development, fostering collaboration, adaptability, and continuous improvement.
+
+
+2. Create Product backlogs.
+  Product backlogs 
+    User Authentication 
+        - Description: Implement user registration and login functionality.
+        - Acceptance Criteria: + Users can register a new account.
+                               + Users can log in to the website.
+        - Priority: High
+    User Interaction when Logged In:
+	- Description: Develop features for users who are logged in.
+	- Acceptance Criteria: + Logged-in users can view a list of fruits.
+			       + Users can leave reviews for fruits.
+			       + Users can share emotional reactions.
+                               + Users can place orders directly on the website.
+                               + Users can make payments for orders.
+	- Priority: High
+    Guest User Interaction:
+
+	- Description: Define features for users who are not logged in.
+	- Acceptance Criteria: + Guest users can view a list of fruits.
+			       + Guest users can read reviews for fruits.
+			       + Guest users can share emotional reactions.
+        - Priority: Medium
+   Estimate to Complete for 3 Backlogs in 1st Sprint:
+      User Authentication:
+	- Development Time: 3 days
+        - Testing Time: 1 day
+        - Total Estimate: 4 days
+      User Interaction when Logged In:	
+	- Development Time: 7 days
+	- Testing Time: 2 day
+	- Total Estimate: 9 days
+      Guest User Interaction:
+	- Development Time: 5 days
+	- Testing Time: 2 day
+	- Total Estimate: 6 days
+
+
