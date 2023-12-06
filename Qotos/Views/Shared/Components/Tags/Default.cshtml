@@ -1,0 +1,6 @@
+@using Qotos.Models;
+@model IEnumerable<Qotos.Models.Tag>
+@foreach (var item in Model)
+{
+	<option value="@item.TagName">@item.TagName</option>
+}

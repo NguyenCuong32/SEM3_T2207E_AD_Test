@@ -1,0 +1,73 @@
+﻿@model Qotos.Models.AppUser
+@{
+	Layout = "_Layout";
+	ViewData["Title"] = "Cài đặt tài khoản";
+}
+
+<div class="d-flex container my-5 py-5">
+	<div class="d-flex flex-column pe-5 flex-shrink-0">
+		<h4 class="my-3">Cài đặt tài khoản</h4>
+		<a href="/accounts/info" class="my-2 link-secondary link-underline-light">Cập nhật thông tin</a>
+		<a href="/accounts/history" class="my-2 link-secondary">Lịch sử download</a>
+		<a href="/accounts/changePassword" class="my-2 link-secondary">Thay đổi mật khẩu</a>
+		<a href="/accounts/delete" class="my-2 link-secondary">Xoá tài khoản</a>
+	</div>
+	<div class="w-100">
+		<h4 class="my-3">Cập nhật thông tin</h4>
+		<form asp-action="info" method="post" enctype="multipart/form-data">
+			<div class="d-flex">
+				<div class="d-flex flex-column align-items-center px-5">
+					<img style="width: 150px; height: 150px; object-fit: cover" class="rounded-circle" src="@Model.Thumbnail"
+						alt="" id="imgPreview" />
+					<label for="File" class="mt-2"><small class="text-decoration-underline" style="cursor: pointer;">Đổi ảnh đại
+							diện</small></label>
+					<input type="file" id="File" name="File" hidden accept="image/*" />
+					<span asp-validation-for="Thumbnail"></span>
+				</div>
+				<div class="w-100">
+					<div class="mb-3 row">
+						<div class="col">
+							<label for="FirstName" class="form-label">Tên</label>
+							<input type="text" class="form-control" asp-for="FirstName" aria-describedby="emailHelp" />
+							<span asp-validation-for="FirstName"></span>
+						</div>
+						<div class="col">
+							<label for="LastName" class="form-label">Họ</label>
+							<input type="text" class="form-control" asp-for="LastName" aria-describedby="emailHelp" />
+							<span asp-validation-for="LastName"></span>
+						</div>
+					</div>
+					<div class="mb-3">
+						<label for="Email" class="form-label">Email</label>
+						<input type="email" class="form-control" asp-for="Email" aria-describedby="emailHelp" />
+						<span asp-validation-for="Email"></span>
+					</div>
+					<div class="mb-3">
+						<label for="UserName" class="form-label">Tên đăng nhập <span class="text-secondary">(Chỉ các chữ
+								cái, số, và dấu gạch dưới)</span></label>
+						<input type="text" class="form-control" asp-for="UserName" aria-describedby="emailHelp" />
+						<span asp-validation-for="UserName"></span>
+					</div>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-dark w-100">Cập nhật</button>
+		</form>
+	</div>
+</div>
+@section js {
+	<script>
+		$(document).ready(() => {
+			$("#File").change(function () {
+				const file = this.files[0];
+				if (file) {
+					let reader = new FileReader();
+					reader.onload = function (event) {
+						$("#imgPreview")
+							.attr("src", event.target.result);
+					};
+					reader.readAsDataURL(file);
+				}
+			});
+		});
+	</script>
+}

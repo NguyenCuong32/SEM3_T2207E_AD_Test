@@ -1,0 +1,41 @@
+﻿@model Qotos.Models.UserDeleteModel
+@{
+	Layout = "_Layout";
+	ViewData["Title"] = "Cài đặt tài khoản";
+}
+
+<div class="d-flex container my-5 pt-4">
+	<div class="d-flex flex-column pe-5 flex-shrink-0">
+		<h4 class="my-3">Cài đặt tài khoản</h4>
+		<a href="/accounts/info" class="my-2 link-secondary">Cập nhật thông tin</a>
+		<a href="/accounts/history" class="my-2 link-secondary">Lịch sử download</a>
+		<a href="/accounts/changePassword" class="my-2 link-secondary">Thay đổi mật khẩu</a>
+		<a href="/accounts/delete" class="my-2 link-secondary link-underline-light">Xoá tài khoản</a>
+	</div>
+	<div class="w-100">
+		<h4 class="my-3">Xoá tài khoản</h4>
+		<form asp-action="delete" asp-asp-controller="accounts" method="post">
+			<div class="mb-3">
+				<label for="UserName" class="form-label">Nhập vào tên tài khoản</label>
+				<input type="text" class="form-control" asp-for="UserName" />
+				<span asp-validation-for="UserName"></span>
+			</div>
+			<div class="mb-3 text-danger">
+				<ul>
+					<li>Bạn có chắc chắn muốn xoá tài khoản của mình không?</li>
+					<li>Tất cả dữ liệu và thông tin liên quan đến tài khoản của bạn sẽ bị xoá vĩnh viễn.</li>
+					<li>Hành động này là không thể đảo ngược. Bạn sẽ không thể khôi phục lại tài khoản hoặc dữ liệu của mình sau
+						khi đã xoá.</li>
+					<li>Sau khi tài khoản bị xoá, bạn sẽ mất quyền truy cập vào các dịch vụ và tính năng liên quan.
+					</li>
+					<li>
+						Xác nhận rằng bạn đã sao lưu hoặc xuất dữ liệu cá nhân quan trọng trước khi thực hiện hành động này.
+					</li>
+				</ul>
+			</div>
+			<button type="submit" class="btn btn-dark w-100">Xoá</button>
+		</form>
+	</div>
+</div>
+@section js {
+}

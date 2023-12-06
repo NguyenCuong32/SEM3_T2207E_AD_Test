@@ -1,0 +1,36 @@
+﻿@model Qotos.Models.Authentication.LoginModel
+@{
+	Layout = "_LayoutAuthentication";
+	ViewData["Title"] = "Đăng nhập";
+}
+
+<div class="w-25 m-auto">
+	<div class="text-center my-4">
+		<h1>Đăng nhập</h1>
+		<div>Chào mừng bạn đã trở lại.</div>
+	</div>
+	<form asp-action="login" method="post">
+		<div class="mb-3">
+			<label for="Email" class="form-label">Email</label>
+			<input type="text" class="form-control" asp-for="Email" aria-describedby="emailHelp" />
+			<div id="emailHelp" class="form-text">Chúng tôi sẽ không chia sẻ email của bạn với bất kì ai khác.</div>
+			<span asp-validation-for="Email"></span>
+		</div>
+		<div class="mb-3">
+			<div class="d-flex">
+				<label for="Password" class="form-label me-auto">Mật khẩu</label>
+				<a class="link-secondary" asp-action="forgotPassword">Quên mật khẩu?</a>
+			</div>
+			<input type="password" class="form-control" asp-for="Password" />
+			<span asp-validation-for="Password"></span>
+		</div>
+		<div class="mb-3 form-check ">
+			<input type="checkbox" class="form-check-input" asp-for="RememberMe" />
+			<label class="form-check-label" for="RememberMe">Lưu thông tin đăng nhập</label>
+		</div>
+		<button type="submit" class="btn btn-dark w-100">Login</button>
+		<div class="text-center border my-3 py-4 rounded"><span>Không có tài khoản</span> <a asp-action="register">Đăng ký
+				ngay</a>
+		</div>
+	</form>
+</div>

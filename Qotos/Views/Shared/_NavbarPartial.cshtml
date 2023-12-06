@@ -1,0 +1,140 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="/">Qotos</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<form class="d-flex m-0 w-100 form-group position-relative" id="formSearch" autocomplete="off">
+				<input class="form-control" type="search" placeholder="Tìm kiếm..." aria-label="Search" id="searchKey" />
+				<button class="btn btn-outline-success mx-2" type="submit">Search</button>
+				<div id="searchBox" class="position-absolute start-0 border p-2 rounded bg-white"
+					style="top: 100%; width: 100%; z-index:1; display: none; margin-top: 10px">
+					<div id="dataStart" style="display: none;">
+						<div id="searchRecentBox">
+							<div>Tìm kiếm gần đây <button class="btn text-secondary" id="btnDeleteTagsRecent">Xoá</button></div>
+							<div id="searchRecent"></div>
+						</div>
+						<div class="mt-3 mb-2"><i class="bi bi-graph-up-arrow"></i> Thịnh hành</div>
+						<div id="searchHot">
+						</div>
+					</div>
+					<div id="dataTags" style="display: none;"></div>
+				</div>
+			</form>
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-shrink-0 align-items-center">
+				@if (SignInManager.IsSignedIn(User))
+				{
+					<li class="nav-item me-2">
+						<button class=" btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#uploadModal">Đăng
+							ảnh</button>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							<div class="">
+								<img style="width: 50px; height: 50px; object-fit: cover" class="rounded-circle"
+									src="@UserManager.GetUserAsync(User).Result.Thumbnail" alt="" />
+							</div>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item"
+									href="/accounts/&#64;@UserManager.GetUserAsync(User).Result.UserName/profile">Hồ sơ của bạn</a></li>
+							<li><a class="dropdown-item" asp-action="info" asp-controller="accounts">Số liệu thống kê</a></li>
+							<li><a class="dropdown-item" asp-action="info" asp-controller="accounts">Cài đặt tài khoản</a>
+							</li>
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+							<li><a class="dropdown-item" asp-action="logout" asp-controller="accounts">Đăng xuất</a></li>
+						</ul>
+					</li>
+				}
+				else
+				{
+					<li class="nav-item">
+						<a class="nav-link" asp-action="login" asp-controller="accounts">Đăng nhập</a>
+					</li>
+				}
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- Modal Upload -->
+<div class="modal fade modal-xl" id="uploadModal" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="p-0 me-auto">
+					<span class="fw-bold">Đăng ảnh lên Qotos</span>
+				</div>
+				<a href="" class="link-secondary">Bạn cần trợ giúp?</a>
+				<button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<form asp-action="submit" asp-controller="photos" method="post" enctype="multipart/form-data"
+				id="sumbitUploadPhoto">
+				<div class="modal-body" id="upload-first-step">
+					<div class="text-center">
+						<label for="FileImg">
+							<img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Breezeicons-actions-22-upload-media.svg/1024px-Breezeicons-actions-22-upload-media.svg.png"
+								alt="" style="width: 200px; cursor: pointer" class="mt-5" />
+						</label>
+						<input type="file" id="FileImg" name="FileImg" hidden accept="image/*" />
+						<div class="text-secondary mb-5"><small>Đăng ảnh, tối đa 500KB</small></div>
+						<div class="text-secondary text-start">
+							<small class="d-flex justify-content-center">
+								<ul>
+									<li><b>Hình ảnh chất lượng cao</b>,(đối với ảnh ít nhất <b>500KB</b>)</li>
+									<li>Hình ảnh <b>rõ ràng và nguyên gốc</b></li>
+								</ul>
+								<ul>
+									<li>Chỉ tải lên hình ảnh <b>của bạn</b></li>
+									<li>Không đăng ảnh khoả thân, bạo lực</li>
+								</ul>
+								<ul>
+									<li>Tôn trọng quyền sở hữu trí tuệ của người khác</li>
+									<li>Đọc chính sách của <a href="" class="link-secondary">Qotos</a></li>
+								</ul>
+							</small>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body" id="upload-second-step" style="display: none;">
+					<div class="modal-body" id="upload-second-step">
+						<div class="text-center mb-5">
+							<img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Breezeicons-actions-22-upload-media.svg/1024px-Breezeicons-actions-22-upload-media.svg.png"
+								alt="" style="max-width: 400px; cursor: pointer" class="mt-5" id="FileImgPreview" />
+						</div>
+					</div>
+					<div class="mb-3">
+						<input type="text" class="form-control" id="Location" name="Location" placeholder="Địa điểm">
+					</div>
+					<div class="form-group my-3">
+						<select class="form-control" id="tags" style="width: 100%;" multiple="multiple" name="tags[]">
+							<option></option>
+							@await Component.InvokeAsync("Tags")
+						</select>
+					</div>
+					<div class="mb-3">
+						<textarea class="form-control" id="Description" name="Description" rows="3"
+							placeholder="Thêm mô tả"></textarea>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Huỷ bỏ</button>
+					<span style="cursor: not-allowed;">
+						<button type="submit" class="btn btn-secondary" disabled="true" id="btnSubmitUploadImg">Đăng ảnh</button>
+					</span>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- /Modal upload -->

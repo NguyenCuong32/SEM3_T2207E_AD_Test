@@ -1,0 +1,44 @@
+﻿@model Qotos.Models.Authentication.RegisterModel
+@{
+	Layout = "_LayoutAuthentication";
+	ViewData["Title"] = "Đăng ký";
+}
+
+<div class="w-25 m-auto">
+	<div class="text-center my-4">
+		<h1>Đăng ký</h1>
+		<div>Bạn đã có tài khoản? <a href="/accounts/login" class="link-secondary">Đăng nhập</a></div>
+	</div>
+	<form asp-action="register" method="post">
+		<div class="mb-3 row">
+			<div class="col">
+				<label for="FirstName" class="form-label">Tên</label>
+				<input type="text" class="form-control" asp-for="FirstName" aria-describedby="emailHelp" />
+				<span asp-validation-for="FirstName"></span>
+			</div>
+			<div class="col">
+				<label for="LastName" class="form-label">Họ</label>
+				<input type="text" class="form-control" asp-for="LastName" aria-describedby="emailHelp" />
+				<span asp-validation-for="LastName"></span>
+			</div>
+		</div>
+		<div class="mb-3">
+			<label for="Email" class="form-label">Email</label>
+			<input type="email" class="form-control" asp-for="Email" aria-describedby="emailHelp" />
+			<span asp-validation-for="Email"></span>
+		</div>
+		<div class="mb-3">
+			<div class="d-flex">
+				<label for="Password" class="form-label me-auto">Mật khẩu<span class="text-secondary">(Tối thiểu 6 ký
+						tự)</span></label>
+			</div>
+			<input type="password" class="form-control" asp-for="Password" />
+			<span asp-validation-for="Password"></span>
+		</div>
+		<button type="submit" class="btn btn-dark w-100">Đăng ký</button>
+	</form>
+	<small>
+		Khi đăng ký, bạn đồng ý với <a href="" class="link-secondary">điều khoản</a> và
+		<a href="" class="link-secondary">chính sách quyền riêng tư </a>
+	</small>
+</div>

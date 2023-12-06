@@ -1,0 +1,122 @@
+﻿@model IEnumerable<Qotos.Models.Collection>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+@{
+	Layout = "_Layout";
+	ViewData["Title"] = "Hồ sơ cá nhân";
+	var data = ViewData["Data"] as dynamic;
+	var photosCount = data?.PhotosCount;
+	var likesCount = data?.LikesCount;
+	var collectionsCount = data?.CollectionsCount;
+	var accountUserName = data?.AccountUserName;
+	var accountDescription = data?.AccountDescription;
+	var accountThumbnail = data?.AccountThumbnail;
+	var accountId = data?.AccountId;
+}
+
+<div class="d-flex container justify-content-center my-5 pt-5">
+	<img style="width: 150px; height: 150px; object-fit: cover" class="rounded-circle" src="@accountThumbnail" alt="" />
+	<div class="ms-5">
+		<div class="d-flex align-items-center">
+			<h1>@accountUserName</h1>
+			<a class="btn btn-outline-secondary ms-3" asp-action="info" asp-controller="accounts">
+				<i class="bi bi-pencil-square"></i> Cài đặt tài khoản
+			</a>
+		</div>
+		<div>@accountDescription</div>
+	</div>
+</div>
+<div class="w-100">
+	<ul class="nav nav-underline border-bottom px-3">
+		<li class="nav-item">
+			<a class="nav-link text-secondary" aria-current="page" asp-action="profile" asp-controller="accounts"><i
+					class="bi bi-image"></i> Ảnh @photosCount</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link text-secondary" asp-action="like" asp-controller="accounts"><i class="bi bi-heart-fill"></i>
+				Thích
+				@likesCount</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" asp-action="collection" asp-controller="accounts"><i class="bi bi-images">
+				</i>Albums @collectionsCount</a>
+		</li>
+	</ul>
+</div>
+<div class="container my-5 pb-5">
+	<div class="row">
+		@if (Model.Count() == 0)
+		{
+			<div class="text-center">
+				<img src="https://unsplash-assets.imgix.net/empty-states/photos.png?auto=format&fit=crop&q=60" alt=""
+					class="w-25">
+			</div>
+		}
+		else
+		{
+			@foreach (var item in Model)
+			{
+				<div class="col-4 mb-3">
+					<a href="/collections/details/@item.Id" class="text-decoration-none">
+						<div class="card">
+							<div class="row">
+								<div class="col-8 overflow-hidden " style="height: 300px;">
+									<div class="bg-secondary bg-opacity-25 h-100 overflow-hidden">
+										@if (item.PhotoCollections != null && item.PhotoCollections.Any())
+										{
+											var firstPhotoCollection = item.PhotoCollections.FirstOrDefault();
+											if (firstPhotoCollection != null && firstPhotoCollection.Photo != null)
+											{
+												<img class="h-100" src="@firstPhotoCollection.Photo?.Thumbnail" alt="Card image" />
+												@* style="border-top-left-radius: calc(0.375rem - (1px))" /> *@
+											}
+										}
+									</div>
+								</div>
+								<div class="col-4 d-flex flex-column ps-0 gap-2">
+									<div class="bg-secondary bg-opacity-25 h-50 overflow-hidden">
+										@foreach (var photoCollection in item.PhotoCollections.Skip(1).Take(1))
+										{
+											<img class="h-100" src="@photoCollection.Photo.Thumbnail" alt="Card image"
+												style="border-top-right-radius: calc(0.375rem - (1px))" />
+										}
+									</div>
+									<div class="bg-secondary bg-opacity-25 h-50 overflow-hidden">
+										@foreach (var photoCollection in item.PhotoCollections.Skip(2).Take(1))
+										{
+											<img class="h-100" src="@photoCollection.Photo.Thumbnail" alt="Card image"
+												style="border-top-right-radius: calc(0.375rem - (1px))" />
+										}
+									</div>
+								</div>
+							</div>
+							<div class="card-body d-flex align-items-end">
+								<div class="me-auto">
+									<h4>@item.Title</h4>
+									<div>@item.PhotoCollections.Count() ảnh</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			}
+		}
+	</div>
+</div>
+
+@* Modal Edit Picture *@
+<div class="modal fade modal-lg" id="editPictureModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-4"></div>
+					<div class="col-8"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

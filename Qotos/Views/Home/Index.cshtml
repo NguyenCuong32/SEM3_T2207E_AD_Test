@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Photo>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+@{
+	Layout = "_Layout";
+	ViewData["Title"] = "Trang chủ";
+	string userId = UserManager.GetUserId(User);
+}
+
+<div class="container my-5 py-5">
+	<div class="row" id="data">
+		@foreach (var item in Model)
+		{
+			<div class="col-4 my-3">
+				<div class="card">
+					<a class="p-3 text-decoration-none link-dark" href="/accounts/&#64;@item.User.UserName/profile">
+						<img style="width: 32px; height: 32px; object-fit: cover" class="rounded-circle" src="@item.User.Thumbnail"
+							alt="" />
+						<span class="fw-bold">@item.User.UserName</span>
+					</a>
+					<img class="card-img-top btn-view" src="@item.Thumbnail" alt="Card image" style="cursor: zoom-in;"
+						data-bs-toggle="modal" data-bs-target="#viewPictureModal" data-url="/photos/view/@item.Id" />
+					<div class="card-body d-flex">
+						@{
+							var isLikedByCurrentUser = (userId != null) && item.Likes.Any(l => l.UserId == userId);
+						}
+						<button class="btn @(isLikedByCurrentUser?"btn-outline-danger":"btn-outline-secondary") me-2 btn-like"
+							data-url="/photos/like/@item.Id">
+							<i class="bi bi-heart-fill"></i>
+						</button>
+						<button class="btn btn-outline-secondary me-auto btn-collection" data-url="@item.Id"><i
+								class="bi bi-plus-square"></i></button>
+						<button class="btn btn-outline-secondary btn-download" data-url="/photos/download/@item.Id"><i
+								class="bi bi-download"></i> Download</button>
+					</div>
+				</div>
+			</div>
+		}
+	</div>
+	<div class="lds-ellipsis">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</div>
+
+@section js {
+	<script>
+		let userId = '@userId';
+	</script>
+	<script type="module" src="/js/home.js"></script>
+}
